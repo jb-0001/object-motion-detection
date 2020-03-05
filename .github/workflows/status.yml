@@ -1,6 +1,6 @@
 # This workflow will install Python 3.8, install the requirements, and test the code with pytest
 
-name: Python application
+name: Build
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
   macos_build:
     
     runs-on: macos-latest
-    timeout-minutes: 3
+    timeout-minutes: 10
     
     steps:
     - uses: actions/checkout@v2
@@ -39,7 +39,7 @@ jobs:
   windows_build:
     
     runs-on: windows-latest
-    timeout-minutes: 3
+    timeout-minutes: 10
     
     steps:
     - uses: actions/checkout@v2
@@ -66,7 +66,7 @@ jobs:
   ubuntu_build:
 
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 10
 
     steps:
     - uses: actions/checkout@v2
