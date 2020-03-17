@@ -21,4 +21,6 @@ This is a school project, i will be working on this project by myself, however a
 
 - [Numpy](https://github.com/numpy/numpy)
 
+- [YOLOv3](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
+
 - Thanks to everyone whose code was used in this project.
