@@ -19,7 +19,7 @@ while video.isOpened():
     _, threshold = cv2.threshold(blur, 35, 255, cv2.THRESH_BINARY)
     dilated = cv2.dilate(threshold, None, iterations=2)
     contours, _ = cv2.findContours(dilated, cv2.RETR_TREE,
-                                                          cv2.CHAIN_APPROX_SIMPLE)
+    cv2.CHAIN_APPROX_SIMPLE)
 
     for contour in contours:
         (x, y, w, h) = cv2.boundingRect(contour)
@@ -37,7 +37,6 @@ while video.isOpened():
 
     if keyboard.is_pressed('q'):
         break
-
 
 
 cv2.destroyAllWindows()
