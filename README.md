@@ -1,8 +1,9 @@
 # Motion and Object Detection
 
 ![License](https://img.shields.io/github/license/jb-0001/object-motion-detection?style=flat-square)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/jb-0001/object-motion-detection?style=flat-square)
 ![Build](https://github.com/jb-0001/object-motion-detection/workflows/Build/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/26ee3ca465a80cb1a3aa/maintainability)](https://codeclimate.com/github/jb-0001/object-motion-detection/maintainability)
+
 ## Introduction
 
  A realtime motion and object detection software written in python using opencv and the yolov3 algorithm.
