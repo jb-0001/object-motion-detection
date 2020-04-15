@@ -2,12 +2,22 @@ import cv2
 import numpy as np
 import keyboard
 
-file = input("""Please enter the filename and extension you want to analyze.\n
-Note: The file needs to be in the same directory as the program.\n """)
+# Choose to use either the webcam or a file.
+while True:
+    choice = input("If you want to use your webcam to detect objects, please press 'c'.\nIf you want to use a videofile, please press 'v'.\n")
+    if choice == ("c") or ("v"):
+        break
+    else:
+        print("Please choose a valid character.")
+        continue
+
 
 # Motion detection using contours
-
-video = cv2.VideoCapture(file)
+if choice == "c":
+    video = cv2.VideoCapture(0)
+elif choice == "v":
+    file = input("Please enter the path to the file you want to analyze.\n")
+    video = cv2.VideoCapture(file)
 
 ret, frame1 = video.read()
 ret, frame2 = video.read()
@@ -35,7 +45,7 @@ while video.isOpened():
     if cv2.waitKey(50) == 27:
         break
 
-    if keyboard.is_pressed('q'):
+    if keyboard.is_pressed("q"):
         break
 
 
