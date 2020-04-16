@@ -4,7 +4,8 @@ import keyboard
 
 # Choose to use either the webcam or a file.
 while True:
-    choice = input("If you want to use your webcam to detect objects, please press 'c'.\nIf you want to use a videofile, please press 'v'.\n")
+    choice = input("If you want to use your webcam to detect objects,"
+    " please press 'c'.\nIf you want to use a videofile, please press 'v'.\n")
     if choice == ("c") or ("v"):
         break
     else:
@@ -12,7 +13,7 @@ while True:
         continue
 
 
-# Motion detection using contours
+# Motion detection using contours.
 if choice == "c":
     video = cv2.VideoCapture(0)
 elif choice == "v":
@@ -28,8 +29,8 @@ while video.isOpened():
     blur = cv2.GaussianBlur(grayscale, (5, 5), 0)
     _, threshold = cv2.threshold(blur, 35, 255, cv2.THRESH_BINARY)
     dilated = cv2.dilate(threshold, None, iterations=2)
-    contours, _ = cv2.findContours(dilated, cv2.RETR_TREE,
-    cv2.CHAIN_APPROX_SIMPLE)
+    contours, _ = cv2.findContours(
+    dilated, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
     for contour in contours:
         (x, y, w, h) = cv2.boundingRect(contour)
