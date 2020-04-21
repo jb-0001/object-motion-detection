@@ -4,6 +4,8 @@
 ![Build](https://github.com/jb-0001/object-motion-detection/workflows/Build/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/26ee3ca465a80cb1a3aa/maintainability)](https://codeclimate.com/github/jb-0001/object-motion-detection/maintainability)
 
+<img src="https://github.com/jb-0001/object-motion-detection/blob/master/utilities/motion%20detection.gif" width="50%" height="50%">
+
 ## Introduction
 
  A realtime motion and object detection software written in python using opencv and the yolov3 algorithm.
