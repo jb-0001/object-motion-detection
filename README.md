@@ -1,4 +1,4 @@
-# Motion and Object Detection
+# Motion Detection
 
 ![License](https://img.shields.io/github/license/jb-0001/object-motion-detection?style=flat-square)
 ![Build](https://github.com/jb-0001/object-motion-detection/workflows/Build/badge.svg)
@@ -8,7 +8,7 @@
 
 ## Introduction
 
- A realtime motion and object detection software written in python using opencv and the yolov3 algorithm.
+ A realtime motion detection software written in python using opencv.
 
 ## Contributing
 
@@ -23,7 +23,5 @@ This is a school project, i will be working on this project by myself, however a
 - [OpenCV-Python](https://github.com/skvark/opencv-python)
 
 - [Numpy](https://github.com/numpy/numpy)
-
-- [YOLOv3](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 
 - Thanks to everyone whose code was used in this project.
