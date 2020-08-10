@@ -12,7 +12,7 @@
 
 ## Contributing
 
-This is a school project, i will be working on this project by myself, however after i finished the project pull requests are welcome.
+Every kind of contribution is welcome.
 
 ## License
 
